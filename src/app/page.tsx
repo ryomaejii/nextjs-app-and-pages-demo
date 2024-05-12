@@ -4,7 +4,7 @@ import { Suspense } from "react";
 
 export default async function Home() {
   return (
-    <div className="py-20 px-8">
+    <div className="py-20 px-8 flex-col flex h-[200vh]">
       <h1 className="text-4xl font-bold">
         Next.js App Router and Pages Router Example
       </h1>
@@ -34,6 +34,14 @@ export default async function Home() {
           Pages Route
         </Link>
       </div>
+      <div className="flex-1"></div>
+      <div className="fixed bottom-4 right-4">↓スクロールしてください</div>
+      <Link
+        href="/app-route-with-scroll-prefetch"
+        className="underline text-2xl mt-8"
+      >
+        App Route with Scroll Prefetch
+      </Link>
     </div>
   );
 }
